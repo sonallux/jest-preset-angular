@@ -13,7 +13,7 @@ import 'zone.js/testing';
 import { TextEncoder, TextDecoder } from 'util';
 
 import { getTestBed } from '@angular/core/testing';
-import { BrowserDynamicTestingModule, platformBrowserDynamicTesting } from '@angular/platform-browser-dynamic/testing';
+import { BrowserTestingModule, platformBrowserTesting } from '@angular/platform-browser/testing';
 
 if (typeof globalThis.TextEncoder === 'undefined') {
     globalThis.TextEncoder = TextEncoder;
@@ -22,8 +22,4 @@ if (typeof globalThis.TextEncoder === 'undefined') {
 
 const testEnvironmentOptions = globalThis.ngJest?.testEnvironmentOptions ?? Object.create(null);
 
-getTestBed().initTestEnvironment(
-    [BrowserDynamicTestingModule],
-    platformBrowserDynamicTesting(),
-    testEnvironmentOptions,
-);
+getTestBed().initTestEnvironment([BrowserTestingModule], platformBrowserTesting(), testEnvironmentOptions);

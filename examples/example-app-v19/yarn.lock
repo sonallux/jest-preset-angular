@@ -356,20 +356,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/platform-browser-dynamic@npm:^19.2.3":
-  version: 19.2.14
-  resolution: "@angular/platform-browser-dynamic@npm:19.2.14"
-  dependencies:
-    tslib: "npm:^2.3.0"
-  peerDependencies:
-    "@angular/common": 19.2.14
-    "@angular/compiler": 19.2.14
-    "@angular/core": 19.2.14
-    "@angular/platform-browser": 19.2.14
-  checksum: 10/7aa093450e40b9da45ec2e1617378dd7cea63b93797d6dae581131315eccb40ba82bb41f0dbe0afef9b105cf90b57f689a3860efe87d2dd9b3cbb02f89a9a220
-  languageName: node
-  linkType: hard
-
 "@angular/platform-browser@npm:^19.2.3":
   version: 19.2.14
   resolution: "@angular/platform-browser@npm:19.2.14"
@@ -5721,7 +5707,6 @@ __metadata:
     "@angular/core": "npm:^19.2.3"
     "@angular/forms": "npm:^19.2.3"
     "@angular/platform-browser": "npm:^19.2.3"
-    "@angular/platform-browser-dynamic": "npm:^19.2.3"
     "@angular/router": "npm:^19.2.3"
     "@types/jest": "npm:^29.5.14"
     "@types/node": "npm:^22.15.34"

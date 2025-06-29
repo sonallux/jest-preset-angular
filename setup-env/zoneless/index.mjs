@@ -1,7 +1,7 @@
 import * as angularCore from '@angular/core';
 import { ErrorHandler, NgModule, VERSION } from '@angular/core';
 import { getTestBed } from '@angular/core/testing';
-import { BrowserDynamicTestingModule, platformBrowserDynamicTesting } from '@angular/platform-browser-dynamic/testing';
+import { BrowserTestingModule, platformBrowserTesting } from '@angular/platform-browser/testing';
 
 import { polyfillEncoder, resolveTestEnvOptions } from '../utils';
 
@@ -36,8 +36,8 @@ const setupZonelessTestEnv = (options) => {
         const testEnvironmentOptions = resolveTestEnvOptions(options);
 
         getTestBed().initTestEnvironment(
-            [BrowserDynamicTestingModule, provideZonelessConfig()],
-            platformBrowserDynamicTesting(),
+            [BrowserTestingModule, provideZonelessConfig()],
+            platformBrowserTesting(),
             testEnvironmentOptions,
         );
 
